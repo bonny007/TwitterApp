@@ -6,6 +6,11 @@ Twitter Mutual Friends Finder App.
 
 This project is designed using Spring, MVC and AOP frameworks. 
 
+
+* **For accessing twitter apis i have used my personal secretaccesskey and accesskey. Once assignment is viewed i will delete or remove those keys. 
+
+* **Due to limitation from twitter itself you can hit only 15 queries in 15 minutes.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -43,12 +48,11 @@ Once application starts on Browser one can see two text fields for twitter handl
 
 Things to watch out for:
 
-*If twitter handle is of invalid format or empty an error will be thrown on UI itself.
+* **If twitter handle is of invalid format or empty an error will be thrown on UI itself.
 
-*If twitter handle doesn't exist OR if no mutual friends exist, the application still process it and on the UI you will get "no mutual friends or twitter handle doesn't exist." 
+* **If twitter handle doesn't exist OR if no mutual friends exist, the application still process it and on the UI you will get "no mutual friends or twitter handle doesn't exist." 
 
-*If any exception is thrown by the application then a JSON response is send with response body having error code, error mesage and timestamp.
-
+* **If any exception is thrown by the application then a JSON response is send with response body having error code, error mesage and timestamp.
 
 
 ## Authors

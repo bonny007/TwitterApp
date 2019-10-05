@@ -1,0 +1,10 @@
+com\bernardspace\twitterfriends\aspect\TwitterException.class
+com\bernardspace\twitterfriends\service\TwitterFriendService.class
+com\bernardspace\twitterfriends\aspect\TwitterExceptionAspect.class
+com\bernardspace\twitterfriends\entity\MutualFriend.class
+com\bernardspace\twitterfriends\configuration\DispatcherServletInitializer.class
+com\bernardspace\twitterfriends\service\MutualFriendService.class
+com\bernardspace\twitterfriends\aspect\TwitterExceptionEntity.class
+com\bernardspace\twitterfriends\configuration\TwitterFriendConfiguration.class
+com\bernardspace\twitterfriends\controller\TwitterFriendController.class
+com\bernardspace\twitterfriends\entity\TwitterHandlesForm.class

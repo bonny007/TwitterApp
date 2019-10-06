@@ -34,8 +34,8 @@ public class MutualFriendService implements TwitterFriendService {
 		
 		Set<Long> user2friendIDs = Arrays.stream(twitter.getFriendsIDs(user2handle, -1).getIDs()).boxed().collect(Collectors.toSet());
 				
-		Set<Long> mutualfriendIDs = user1friendIDs.stream().flatMapToLong(friendid-> user2friendIDs.add(friendid) == false ? LongStream.of(friendid) : null).boxed().collect(Collectors.toSet());
-					
+		Set<Long> mutualfriendIDs = user1friendIDs.stream().filter(friendid->user2friendIDs.contains(friendid)).collect(Collectors.toSet());
+		
 		List<MutualFriend> mutualfriends = new ArrayList<MutualFriend>();
 				
 		mutualfriendIDs.forEach(friendid->{
